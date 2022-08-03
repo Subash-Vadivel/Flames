@@ -1,0 +1,62 @@
+.container{
+    justify-content: center;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.cen{
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+}
+.forms{
+    border-radius: 50px;
+    background-color:rgb(230, 223, 223);
+    padding: 40px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-color: gold;
+    font-weight: bold;
+}
+button{
+    margin-right: 20px;
+}
+.cnt{
+    justify-content: center;
+    justify-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.wrapper{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.wrapper-note{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.container2{
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    text-align: center;
+    
+}
+.stybt{
+    background-color: rgb(210, 30, 30);
+    color:white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+}
