@@ -7,7 +7,6 @@ import Mir from './resources/images/Marriage.jpg';
 import Sis from './resources/images/bros.jpg';
 import Dif from './resources/images/def.jpg';
 import lo from './resources/images/logo.webp';
-import { useState } from 'react';
 var notes="Try Your Luck";
 var sam=<img src={Dif} height="200px" alt='Marriage'/>;
 function res(n1,n2)
@@ -98,7 +97,7 @@ function res(n1,n2)
       }
       else if (a === 's')
       {
-        notes="Marriage";
+        notes="Sister";
         sam=<img src={Sis} height="200px" alt='Marriage'/>;
         return;
       }
@@ -129,20 +128,20 @@ function res(n1,n2)
 
 function Love()
 {
-    const[n1,onN1]=useState("");
-    const[n2,onN2]=useState("");
-    
+     var n1="";
+     var n2="";
      return(<>
      <div className='cen'>
         <img src={lo} height="200px" alt='Loading'/>
 
         </div>
      <div className='container'>
-     <form className='forms' onSubmit={res(n1,n2)}>
+     <form className='forms' >
         <label for="name1">Your Name : </label>
-        <input type="name" value={n1} name="person1" onChange={(event)=>{onN1(event.target.value)}} id="name1"></input><br></br>
+        <input type="name"  name="person1"  id="name1"></input><br></br>
         <label for="name2">Crush Name : </label>
-        <input type="name" value={n2} name="person2" onChange={(event)=>{onN2(event.target.value)}} id="name2"></input><br></br>
+        <input type="name" name="person2"  id="name2"></input><br></br>
+        <button type='button' onClick={res(person1,person2)} >Submit</button>
      </form>
      </div>
      <div className='container2'>
